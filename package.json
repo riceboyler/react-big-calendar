@@ -78,6 +78,7 @@
     "lolex": "^1.4.0",
     "markdown-jsx-loader": "^2.0.1",
     "marked": "^0.3.5",
+    "material-ui": "^0.15.1",
     "mocha": "^2.2.5",
     "moment": "^2.13.0",
     "mt-changelog": "^0.6.1",

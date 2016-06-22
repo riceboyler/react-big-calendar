@@ -4,10 +4,10 @@ import Intro from './Intro.md';
 import cn from 'classnames';
 import { render } from 'react-dom';
 
-import localizer from 'react-big-calendar/localizers/globalize';
-import globalize from 'globalize';
+import localizer from 'react-big-calendar/localizers/moment';
+import moment from 'moment';
 
-localizer(globalize);
+localizer(moment);
 
 import 'react-big-calendar/less/styles.less';
 import './styles.less';
@@ -18,7 +18,7 @@ let demoRoot = 'https://github.com/intljusticemission/react-big-calendar/tree/ma
 const Example = React.createClass({
   getInitialState(){
     return {
-      selected: 'basic'
+      selected: 'advysan'
     };
   },
 
@@ -31,6 +31,7 @@ const Example = React.createClass({
       popup: require('./demos/popup'),
       rendering: require('./demos/rendering'),
       customView: require('./demos/customView'),
+      advysan: require('./demos/advysan')
     }[selected];
 
     return (
@@ -71,6 +72,9 @@ const Example = React.createClass({
               </li>
               <li className={cn({active: selected === 'rendering' })}>
                 <a href='#' onClick={this.select.bind(null, 'rendering')}>Custom rendering</a>
+              </li>
+              <li className={cn({active: selected === 'adyvsan' })}>
+                <a href='#' onClick={this.select.bind(null, 'advysan')}>Advysan</a>
               </li>
               {/* temporary hide link to documentation
               <li className={cn({active: selected === 'customView' })}>
