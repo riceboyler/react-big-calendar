@@ -85,167 +85,104 @@
 	var demoRoot = 'https://github.com/intljusticemission/react-big-calendar/tree/master/examples/demos';
 	
 	var Example = _react2.default.createClass({
-	  displayName: 'Example',
-	  getInitialState: function getInitialState() {
-	    return {
-	      selected: 'advysan'
-	    };
-	  },
-	  render: function render() {
-	    var selected = this.state.selected;
-	    var Current = {
-	      basic: __webpack_require__(344),
-	      selectable: __webpack_require__(451),
-	      cultures: __webpack_require__(452),
-	      popup: __webpack_require__(458),
-	      rendering: __webpack_require__(459),
-	      customView: __webpack_require__(460),
-	      advysan: __webpack_require__(461)
-	    }[selected];
+	    displayName: 'Example',
+	    getInitialState: function getInitialState() {
+	        return {
+	            selected: 'advysan'
+	        };
+	    },
+	    render: function render() {
+	        var selected = this.state.selected;
+	        var Current = {
+	            basic: __webpack_require__(344),
+	            selectable: __webpack_require__(451),
+	            cultures: __webpack_require__(452),
+	            popup: __webpack_require__(458),
+	            rendering: __webpack_require__(459),
+	            customView: __webpack_require__(460),
+	            advysan: __webpack_require__(461)
+	        }[selected];
 	
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'app' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'jumbotron' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container' },
-	          _react2.default.createElement(
-	            'h1',
-	            null,
-	            'Big Calendar ',
-	            _react2.default.createElement('i', { className: 'fa fa-calendar' })
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'such enterprise, very business.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#intro' },
-	              _react2.default.createElement('i', { className: 'fa fa-play' }),
-	              ' Getting started'
-	            ),
-	            ' | ',
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#api' },
-	              _react2.default.createElement('i', { className: 'fa fa-book' }),
-	              ' API documentation'
-	            ),
-	            ' | ',
-	            _react2.default.createElement(
-	              'a',
-	              { target: '_blank', href: 'https://github.com/intljusticemission/react-big-calendar' },
-	              _react2.default.createElement('i', { className: 'fa fa-github' }),
-	              ' github'
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'examples contain' },
-	        _react2.default.createElement(
-	          'aside',
-	          null,
-	          _react2.default.createElement(
-	            'ul',
-	            { className: 'nav nav-pills' },
-	            _react2.default.createElement(
-	              'li',
-	              { className: (0, _classnames2.default)({ active: selected === 'basic' }) },
-	              _react2.default.createElement(
-	                'a',
-	                { href: '#', onClick: this.select.bind(null, 'basic') },
-	                'Basic'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { className: (0, _classnames2.default)({ active: selected === 'selectable' }) },
-	              _react2.default.createElement(
-	                'a',
-	                { href: '#', onClick: this.select.bind(null, 'selectable') },
-	                'Selectable'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { className: (0, _classnames2.default)({ active: selected === 'cultures' }) },
-	              _react2.default.createElement(
-	                'a',
-	                { href: '#', onClick: this.select.bind(null, 'cultures') },
-	                'I18n and Locales'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { className: (0, _classnames2.default)({ active: selected === 'popup' }) },
-	              _react2.default.createElement(
-	                'a',
-	                { href: '#', onClick: this.select.bind(null, 'popup') },
-	                'Popup'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { className: (0, _classnames2.default)({ active: selected === 'rendering' }) },
-	              _react2.default.createElement(
-	                'a',
-	                { href: '#', onClick: this.select.bind(null, 'rendering') },
-	                'Custom rendering'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { className: (0, _classnames2.default)({ active: selected === 'adyvsan' }) },
-	              _react2.default.createElement(
-	                'a',
-	                { href: '#', onClick: this.select.bind(null, 'advysan') },
-	                'Advysan'
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'example' },
-	          _react2.default.createElement(
+	        return _react2.default.createElement(
 	            'div',
-	            { className: 'view-source' },
+	            { className: 'app' },
 	            _react2.default.createElement(
-	              'a',
-	              { target: '_blank', href: demoRoot + '/' + selected + '.js' },
-	              _react2.default.createElement(
-	                'strong',
-	                null,
-	                _react2.default.createElement('i', { className: 'fa fa-code' }),
-	                ' View example source code'
-	              )
+	                'div',
+	                { className: 'examples contain' },
+	                _react2.default.createElement(
+	                    'aside',
+	                    null,
+	                    _react2.default.createElement(
+	                        'ul',
+	                        { className: 'nav nav-pills' },
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: (0, _classnames2.default)({ active: selected === 'basic' }) },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: '#', onClick: this.select.bind(null, 'basic') },
+	                                'Basic'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: (0, _classnames2.default)({ active: selected === 'selectable' }) },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: '#', onClick: this.select.bind(null, 'selectable') },
+	                                'Selectable'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: (0, _classnames2.default)({ active: selected === 'cultures' }) },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: '#', onClick: this.select.bind(null, 'cultures') },
+	                                'I18n and Locales'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: (0, _classnames2.default)({ active: selected === 'popup' }) },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: '#', onClick: this.select.bind(null, 'popup') },
+	                                'Popup'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: (0, _classnames2.default)({ active: selected === 'rendering' }) },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: '#', onClick: this.select.bind(null, 'rendering') },
+	                                'Custom rendering'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: (0, _classnames2.default)({ active: selected === 'adyvsan' }) },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: '#', onClick: this.select.bind(null, 'advysan') },
+	                                'Advysan'
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'example' },
+	                    _react2.default.createElement(Current, { className: 'demo' })
+	                )
 	            )
-	          ),
-	          _react2.default.createElement(Current, { className: 'demo' })
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'docs' },
-	        _react2.default.createElement(_Intro2.default, { className: 'contain section' }),
-	        _react2.default.createElement(_Api2.default, { className: 'contain section' })
-	      )
-	    );
-	  },
-	  select: function select(selected, e) {
-	    e.preventDefault();
-	    this.setState({ selected: selected });
-	  }
+	        );
+	    },
+	    select: function select(selected, e) {
+	        e.preventDefault();
+	        this.setState({ selected: selected });
+	    }
 	});
 	
 	(0, _reactDom.render)(_react2.default.createElement(Example, null), document.getElementById('root'));
