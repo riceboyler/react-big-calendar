@@ -216,25 +216,25 @@ export default class TimeGrid extends Component {
           />
           { this.renderHeaderCells(range) }
         </div>
-        <div className='rbc-row'>
-          <div
-            ref={ref => this._gutters[0] = ref}
-            className='rbc-label rbc-header-gutter'
-            style={{ width }}
-          >
-            { message(messages).allDay }
-          </div>
-          <div ref='allDay' className='rbc-allday-cell'>
-            <BackgroundCells
-              slots={range.length}
-              container={()=> this.refs.allDay}
-              selectable={this.props.selectable}
-            />
-            <div style={{ zIndex: 1, position: 'relative' }}>
-              { this.renderAllDayEvents(range, levels) }
-            </div>
-          </div>
-        </div>
+        {/*<div className='rbc-row'>*/}
+          {/*<div*/}
+            {/*ref={ref => this._gutters[0] = ref}*/}
+            {/*className='rbc-label rbc-header-gutter'*/}
+            {/*style={{ width }}*/}
+          {/*>*/}
+            {/*{ message(messages).allDay }*/}
+          {/*</div>*/}
+          {/*<div ref='allDay' className='rbc-allday-cell'>*/}
+            {/*<BackgroundCells*/}
+              {/*slots={range.length}*/}
+              {/*container={()=> this.refs.allDay}*/}
+              {/*selectable={this.props.selectable}*/}
+            {/*/>*/}
+            {/*<div style={{ zIndex: 1, position: 'relative' }}>*/}
+              {/*{ this.renderAllDayEvents(range, levels) }*/}
+            {/*</div>*/}
+          {/*</div>*/}
+        {/*</div>*/}
       </div>
     )
   }
